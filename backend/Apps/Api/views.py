@@ -14,8 +14,6 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         # ...
 
         return token
-    
-
 @api_view(['GET'])
 def getRoutes(request):
    

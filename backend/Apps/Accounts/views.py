@@ -33,9 +33,8 @@ def login(request):
                 token = {
                     'refresh':str(refresh),
                     'access' :str(refresh.access_token),
-
+                    
                 }
-
                 return Response({'message': 'Login successful', 'token': token}, status=status.HTTP_200_OK)
             else:
                 return Response({'message': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
