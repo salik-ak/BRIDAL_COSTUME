@@ -102,3 +102,4 @@ yarn-error.log
 
 # Build directory
 build/
+.env
