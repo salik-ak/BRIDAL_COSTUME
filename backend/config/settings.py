@@ -183,3 +183,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'Accounts.CustomUser'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+#SMTP CONFIGURATION
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_PORT= 587
+EMAIL_HOST_USER= 'greenstorefun@gmail.com'
+EMAIL_HOST_PASSWORD='hrolvjiwunkxulwx'
+EMAIL_USE_TLS= True
+EMAIL_USE_SSL= False
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+AUTH_USER_MODEL = 'authentication.CustomUser'
